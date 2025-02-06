@@ -13,11 +13,27 @@
         <div class="container">
             <h1><i class="fa-solid fa-scale-balanced"></i>Unit Converter</h1>
             <div class="navbar">
-                <p>Length</p>
-                <p>Weight</p>
-                <p>Temperature</p>
+                <p class="option">Length</p>
+                <p class="option">Weight</p>
+                <p class="option">Temperature</p>
+            </div>
+            <div class="content">
+                Text
             </div>
         </div>
     </main>
+
+    <script>
+        let options = document.querySelectorAll('.option');
+        let divcontent = document.querySelector('.content');
+        options.forEach(element => {
+            element.addEventListener('click', () => {
+                console.log(element.innerHTML);
+                divcontent.innerHTML = element.innerHTML;
+            });
+        });
+        console.log(options)
+        console.log(options[1])
+    </script>
 </body>
 </html>
