@@ -1,5 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
+
+/*
+    * need to make display grid in container
+*/
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +19,9 @@ body {
     align-items: center;
 }
 
+h1{
+    background-color: darkblue;
+}
 .container {
     width: 600px;
     height: 400px;
@@ -16,6 +29,7 @@ body {
     border-radius: 10px;
     padding: 2rem;
     box-shadow: 0 0 11px rgb(0 0 0 / 0.2);
+    overflow: hidden;
 }
 
 i{
@@ -30,6 +44,7 @@ i{
     justify-content: left;
     font-weight: 600;
     font-family: "Work Sans", serif;
+    background-color: yellow;
 }
 
 .navbar p{
@@ -40,6 +55,17 @@ i{
 .navbar p:hover {
     border-bottom: solid 1px blue;
     cursor: pointer;
+}
+
+.content{
+    background-color: blueviolet;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 
 @media (max-width: 768px) {
