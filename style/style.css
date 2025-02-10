@@ -1,88 +1,46 @@
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
 
-
-/*
-    * need to make display grid in container
-*/
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-body {
+body{
     margin: 0;
     padding: 0;
+}
+
+*{
+    font-family: Work Sans;
+}
+
+.container{
+    width: 100%;
     height: 100vh;
+    background-color: #D9EAFD;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
-h1{
-    background-color: darkblue;
-}
-.container {
-    width: 600px;
-    height: 400px;
-    background-color: #FBFBFB;
-    border-radius: 10px;
-    padding: 2rem;
-    box-shadow: 0 0 11px rgb(0 0 0 / 0.2);
-    overflow: hidden;
+.main-content{
+    width: 80%;
+    height: 50%;
+    padding: 20px;
+    background-color: #F8FAFC;
+    border-radius: 6px;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
 }
 
-i{
-    padding-right: 15px;
-}
-
-.navbar {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: left;
-    font-weight: 600;
-    font-family: "Work Sans", serif;
-    background-color: yellow;
-}
-
-.navbar p{
-    padding: 3px;
-    transition: all 2s;
-}
-
-.navbar p:hover {
-    border-bottom: solid 1px blue;
-    cursor: pointer;
-}
-
-.content{
-    background-color: blueviolet;
-    width: 100%;
-    height: fit-content;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-}
 
 @media (max-width: 768px) {
+    .main-content{
+        width: 85%;
+    }
 
-    .navbar {
+    .navbar{
+        display: flex;
         flex-direction: column;
         align-items: center;
-        width: 80vw;
     }
-
-    .container{
-        width: 90%;
-        padding: 1rem;
-    }
-
+    
     h1{
         text-align: center;
     }
 }
-
