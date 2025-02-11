@@ -14,40 +14,34 @@
             <div class="main-content">
                 <h1><i class="fa-solid fa-scale-balanced"></i>Unit Converter</h1>
 
-            <div class="navbar">
-                <p class="option">Length</p>
-                <p class="option">Weight</p>
-                <p class="option">Temperature</p>
-            </div>
-            <div class="content">
-                Text
-            </div>
+                <div class="navbar">
+                    <p class="option">Length</p>
+                    <p class="option">Weight</p>
+                    <p class="option">Temperature</p>
+                </div>
+                <div class="content">
+                    <label for="lenght">Enter the length to convert:</label>
+                    <input type="number" name="lenght" id="length">
+
+                <div class="converter-content">
+                    <div>                    
+                        <label for="convertfro">Unit to convert from:    
+                        </label>
+                        <select name="convertfro" id="">
+                            <option value="km">km</option>
+                        </select>
+                    </div>
+                    <div style="text-align: centers;">
+                        <label for="convertfro">Unit to convert from:</label>
+                        <select name="convertfro" id="">
+                            <option value="km">km</option>
+                        </select>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </main>
 
-    <script>
-        let options = document.querySelectorAll('.option');
-        let divcontent = document.querySelector('.content');
-        options.forEach(element => {
-            element.addEventListener('click', () => {
-                console.log(element.innerHTML);
-                divcontent.innerHTML =`
-                <input type="text" id="input1">
-                <input type="text" id="input2">
-                <button>Pobierz wartości</button>
-            `;
-
-            document.querySelector("button").addEventListener("click", () => {
-                const input1Value = document.getElementById("input1").value;
-                const input2Value = document.getElementById("input2").value;
-                console.log("Wartość pierwszego inputa:", input1Value);
-                console.log("Wartość drugiego inputa:", input2Value);
-            });
-            });
-        });
-        console.log(options)
-        console.log(options[1])
-    </script>
 </body>
 </html>
