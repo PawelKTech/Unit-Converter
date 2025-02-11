@@ -1,4 +1,3 @@
-<script>
 let options = document.querySelectorAll('.option');
 let divcontent = document.querySelector('.content');
 options.forEach(element => {
@@ -20,4 +19,3 @@ options.forEach(element => {
 });
 console.log(options)
 console.log(options[1])
-</script>
