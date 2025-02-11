@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Unit Converter</title>
-    <link rel="shortcut icon" href="assets/scale-balanced-solid.svg" type="image/x-icon">
-    <link rel="stylesheet" href="style/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
-</head>
-<body>
+    <link
+      rel="shortcut icon"
+      href="assets/scale-balanced-solid.svg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style/style.css" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <main>
-        <div class="container">
-            <div class="main-content">
-                <h1><i class="fa-solid fa-scale-balanced"></i>Unit Converter</h1>
-
-                <div class="navbar">
-                    <p class="option">Length</p>
-                    <p class="option">Weight</p>
-                    <p class="option">Temperature</p>
-                </div>
-                <div class="content">
-                    <label for="lenght">Enter the length to convert:</label>
-                    <input type="number" name="lenght" id="length">
-
-                <div class="converter-content">
-                    <div>                    
-                        <label for="convertfro">Unit to convert from:    
-                        </label>
-                        <select name="convertfro" id="">
-                            <option value="km">km</option>
-                        </select>
-                    </div>
-                    <div style="text-align: centers;">
-                        <label for="convertfro">Unit to convert from:</label>
-                        <select name="convertfro" id="">
-                            <option value="km">km</option>
-                        </select>
-                    </div>
-                </div>
-                </div>
+      <div class="container">
+        <div class="main-content">
+          <h1><i class="fa-solid fa-scale-balanced"></i>Unit Converter</h1>
+          <div class="navbar">
+            <p class="option">Length</p>
+            <p class="option">Weight</p>
+            <p class="option">Temperature</p>
+          </div>
+          <div class="content">
+            <div class="number-input">
+              <label for="lenght"><h1>Enter the length to convert:</h1></label>
+              <input type="number" name="lenght" id="length" />
             </div>
-        </div>
-    </main>
 
-</body>
+            <div class="converter-content">
+              <div class="from">
+                <label for="convertFrom"><h1>Unit to convert from:</h1> </label>
+                <select name="convertFrom" id="convertFromInput">
+                  <option value="km">km</option>
+                  <option value="m">m</option>
+                  <option value="cm">cm</option>
+                  <option value="mm">mm</option>
+                </select>
+              </div>
+              <div class="to">
+                <label for="convertTo"><h1>Unit to convert from:</h1></label>
+                <select name="convertTo" id="convertToInput">
+                  <option value="km">km</option>
+                  <option value="m">m</option>
+                  <option value="cm">cm</option>
+                  <option value="mm">mm</option>
+                </select>
+              </div>
+              <button>wylicz</button>
+            </div>
+
+            <div class="result">
+              <p>No data provaid.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="script/script.js"></script>
+  </body>
 </html>
