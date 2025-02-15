@@ -33,7 +33,7 @@ body {
 
 h1 {
   margin-top: 15px;
-  margin-bottom: 5px;
+  margin-bottom: 20px;
   font-family: "Roboto";
   letter-spacing: 0.02em;
   font-weight: 400;
@@ -55,8 +55,21 @@ i {
 
 .navbar_option {
   cursor: pointer;
-  padding: 0 30px;
-  position: relative;
+  padding: 8px 30px;
+  transition: background 0.3s ease-in-out, border-radius 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: #3b4c66;
+}
+
+.navbar_option:hover{
+  background-color: #BCCCDC;
+  border-radius: 5px;
+  color: #fff;
+}
+
+.navbar_option:active {
+  background-color: #BCCCDC;
+  color: #fff;
+  border-radius: 5px;
 }
 
 .content {
@@ -64,6 +77,7 @@ i {
   min-height: 400px;
   display: flex;
   flex-direction: column;
+  animation: fadeIn 0.5s ease-in-out;
 }
 
 label {
@@ -76,21 +90,23 @@ input {
   border: 1px solid #9d9d9d;
   margin-top: 8px;
   width: 100%;
+  border-radius: 12px;
+  width: 100%;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 }
+
+.number-input{
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
 
 .converter-content {
   display: flex;
   flex-direction: row;
 }
 
-.number-input {
-  padding: 10px;
-}
-
-#number-input {
-  width: 100%;
-  border-radius: 10px;
-}
 
 .from {
   width: 50%;
@@ -109,33 +125,9 @@ select {
   border: 1px solid #9d9d9d;
   margin-top: 8px;
   background-color: white;
-}
+  border-radius: 12px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); 
 
-button{
-  width: 20%;
-  padding: 12px;
-  margin-left: 10px;
-  margin-top: 10px;
-  background-color: #9AA6B2;
-  border-radius: 10px;
-  border: none;
-  cursor: pointer;
-  transition: background 0.7s ease-in-out;
-  font-size: large;
-}
-
-button:hover{
-  background-color: #BCCCDC;
-}
-
-button:active{
-  opacity: 0.75;
-
-}
-
-.result {
-  padding: 20px;
-  box-sizing: border-box;
 }
 
 .weight{
@@ -146,6 +138,36 @@ button:active{
   display: none;
 }
 
+button{
+  width: fit-content;
+  padding: 12px 25px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #9AA6B2;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.4s ease-in-out;
+  font-size: large;
+  color: #fff;
+
+}
+
+button:hover{
+  background-color: #BCCCDC;
+}
+
+button:active{
+  transform: scale(0.98); /* Efekt zmniejszenia przy kliknięciu */
+  opacity: 0.75;
+}
+
+.result {
+  padding: 20px;
+  box-sizing: border-box;
+  font-size: x-large;
+}
+
 
 @media (max-width: 768px) {
   .container {
@@ -154,7 +176,7 @@ button:active{
   }
 
   .main-content {
-    width: 90%;
+    width: 90% !important;
     height: auto;
     padding: 10px;
     padding-top: 10px;
@@ -189,4 +211,20 @@ button:active{
     margin-left: 0;
     margin-top: 20px;
   }
+
+  .number-input{
+    padding: 0px;
+  }
+}
+
+@media (max-width: 960px){
+  .main-content{
+    width: 80%;
+  }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
