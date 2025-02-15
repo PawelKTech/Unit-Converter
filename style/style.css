@@ -22,7 +22,7 @@ body {
 }
 
 .main-content {
-  width: 65%;
+  width: 50%;
   min-height: fit-content;
   padding: 20px;
   background-color: #f8fafc;
@@ -154,7 +154,7 @@ button:active{
   }
 
   .main-content {
-    width: 85%;
+    width: 90%;
     height: auto;
     padding: 10px;
     padding-top: 10px;
