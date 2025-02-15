@@ -21,38 +21,48 @@
         <div class="main-content">
           <h1><i class="fa-solid fa-scale-balanced"></i>Unit Converter</h1>
           <div class="navbar">
-            <p class="option">Length</p>
-            <p class="option">Weight</p>
-            <p class="option">Temperature</p>
+            <p class="navbar_option">Length</p>
+            <p class="navbar_option">Weight</p>
+            <p class="navbar_option">Temperature</p>
           </div>
           <div class="content">
             <div class="number-input">
-              <label for="lenght"><h1>Enter the length to convert:</h1></label>
-              <input type="number" name="length" id="length" />
+              <label for="length"><h1>Enter the length to convert:</h1></label>
+              <input type="number" name="length" id="number-input" />
             </div>
 
             <div class="converter-content">
               <div class="from">
                 <label for="convertFrom"><h1>Unit to convert from:</h1> </label>
                 <select name="convertFrom" id="convertFromInput">
-                  <option value="km">km</option>
-                  <option value="m">m</option>
-                  <option value="cm">cm</option>
-                  <option value="mm">mm</option>
+                  <option value="km" class="length">km</option>
+                  <option value="m" class="length">m</option>
+                  <option value="cm" class="length">cm</option>
+                  <option value="mm" class="length">mm</option>
+                  <option value="ton" class="weight">ton</option>
+                  <option value="kg" class="weight">kg</option>
+                  <option value="g" class="weight">g</option>
+                  <option value="C" class="temperature">Celsius</option>
+                  <option value="F" class="temperature">Fahrenheit</option>
                 </select>
               </div>
               <div class="to">
                 <label for="convertTo"><h1>Unit to convert from:</h1></label>
                 <select name="convertTo" id="convertToInput">
-                  <option value="km">km</option>
-                  <option value="m">m</option>
-                  <option value="cm">cm</option>
-                  <option value="mm">mm</option>
+                  <option value="km" class="length">km</option>
+                  <option value="m" class="length">m</option>
+                  <option value="cm" class="length">cm</option>
+                  <option value="mm" class="length">mm</option>
+                  <option value="ton" class="weight">ton</option>
+                  <option value="kg" class="weight">kg</option>
+                  <option value="g" class="weight">g</option>
+                  <option value="C" class="temperature">Celsius</option>
+                  <option value="F" class="temperature">Fahrenheit</option>
                 </select>
               </div>
             </div>
 
-            <button>Calculate:</button>
+            <button id="calculate-button">Calculate:</button>
             <div class="result">
               <p>No data provided.</p>
             </div>
