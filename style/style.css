@@ -108,6 +108,29 @@ select {
   border-radius: 10px;
   border: 1px solid #9d9d9d;
   margin-top: 8px;
+  background-color: white;
+}
+
+button{
+  width: 20%;
+  padding: 12px;
+  margin-left: 10px;
+  margin-top: 10px;
+  background-color: #9AA6B2;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.7s ease-in-out;
+  font-size: large;
+}
+
+button:hover{
+  background-color: #BCCCDC;
+}
+
+button:active{
+  opacity: 0.75;
+
 }
 
 .result {
@@ -150,5 +173,11 @@ select {
 
   body {
     margin: 30px 0;
+  }
+
+  button{
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
   }
 }
