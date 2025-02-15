@@ -33,9 +33,6 @@ calculateButton.addEventListener("click", () => {
   } else {
     result.innerHTML = "The input cannot be null or empty.";
   }
-
-  console.log(`${numberInput} ${selectedFrom} ${selectedTo}`);
-  console.log(chosenNavbarOption);
 });
 
 navbar.addEventListener("click", (event) => {
